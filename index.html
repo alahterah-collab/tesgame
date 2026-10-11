@@ -27,12 +27,12 @@
   <div id="mobileactions"><button id="attackmobile">⚔</button><button id="spellmobile">✧</button></div>
   <div id="help"><button class="close" id="closehelp">✕</button><h2>Kontrol Petualang</h2><p><b>WASD / tombol panah</b> — bergerak perlahan dan stabil.<br><b>Mouse</b> — melihat ke kiri, kanan, atas, dan bawah.<br><b>Space / klik kiri</b> — ayunkan pedang ke arah crosshair.<br><b>E</b> — lepaskan Arcane Bolt, memakai mana.<br><b>Q</b> — meminum potion penyembuh.<br><b>Shift</b> — berlari sedikit lebih cepat.<br><b>Esc</b> — melepas mouse. Tekan Mulai untuk mengunci lagi.</p><p>Grafis 3D dengan bayangan lembut dan kamera tanpa goyangan untuk pengalaman yang lebih nyaman dilihat.</p></div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r160/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
 <script>
 (function(){
 'use strict';
 const $=id=>document.getElementById(id); const game=$('game');
-if(!window.THREE){$('loadmsg').innerHTML='Engine 3D gagal dimuat. Pastikan internet aktif, lalu muat ulang halaman.';return;}
+if(!window.THREE){$('loadmsg').innerHTML='Engine 3D gagal dimuat. Periksa koneksi internet atau pemblokir CDN, lalu muat ulang halaman.';return;}
 const THREE=window.THREE;
 let renderer,scene,camera,playerRoot,pitchRig,swordPivot,bodyRoot,clock=new THREE.Clock();
 try{

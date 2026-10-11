@@ -1,0 +1,16 @@
+{
+  "id": "/",
+  "name": "Aetherion Online — Skybound Chronicles",
+  "short_name": "Aetherion",
+  "description": "Anime-fantasy action RPG set among floating continents and ancient ruins.",
+  "lang": "id",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#081018",
+  "theme_color": "#09131c",
+  "icons": [
+    { "src": "./icons/aetherion.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
